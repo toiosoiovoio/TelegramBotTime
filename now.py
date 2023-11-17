@@ -16,7 +16,7 @@ def now(update: Update, context: CallbackContext) -> None:
 
 def main() -> None:
     # Set up the Telegram Bot with your token
-    updater = Updater("6321549495:AAE-shnQcCl5_MwBqfj9_2LvQIu3z_kbqaM")
+    updater = Updater("")
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
