@@ -1,0 +1,15 @@
+Para correr em Python antes do file now.py
+
+Update ao repositório
+sudo apt update
+
+Instalar pip
+sudo apt install python3-pip
+
+Instalar python telegram bot
+sudo pip install python-telegram-bot==13.7
+
+###########################################
+
+Para executar
+python3 now.py
