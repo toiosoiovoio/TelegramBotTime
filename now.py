@@ -1,22 +1,21 @@
 import logging
-from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
+from telegram import Update
 
-# Set up logging
+# Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-logger = logging.getLogger(__name__)
+
+# Your bot token obtained from BotFather
+TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 
 # Define the /now command handler
 def now(update: Update, context: CallbackContext) -> None:
-    # Get the current date and time
     current_time = update.message.date.strftime("%Y-%m-%d %H:%M:%S")
-
-    # Respond to the user with the current date and time
     update.message.reply_text(f"The current date and time is: {current_time}")
 
 def main() -> None:
-    # Set up the Telegram Bot with your token
-    updater = Updater("")
+    # Create the Updater and pass it your bot's token
+    updater = Updater(6321549495:AAE-shnQcCl5_MwBqfj9_2LvQIu3z_kbqaM)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
@@ -32,3 +31,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
